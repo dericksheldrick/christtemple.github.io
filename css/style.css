@@ -1,0 +1,21 @@
+
+#gallery a{
+    transition: 1s;
+    padding: 15px;
+}
+#gallery a:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+    
+}
+#gallery{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    margin:8px 8px;
+    transition: 1s;
+    filter: grayscale(70%);
+}
+
