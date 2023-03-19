@@ -4,7 +4,7 @@
     padding: 15px;
 }
 #gallery a:hover{
-    filter: grayscale(100%);
+    filter: grayscale(50%);
     transform: scale(1.1);
     
 }
@@ -16,6 +16,6 @@
     align-items: center;
     margin:8px 8px;
     transition: 1s;
-    filter: grayscale(70%);
+    filter: grayscale(30%);
 }
 
