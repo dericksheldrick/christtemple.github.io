@@ -136,51 +136,37 @@ a {
 }
 .service-section {
   display:flex;
-  flex-direction: column;
+  justify-content: space-around;
+  /*flex-direction: column;*/
   text-align: justify;
   padding: 10rem 2rem;
-  background: var(--main-blue);
-  opacity: 0.6;
   width: 100%;
-  height: 5vh;
+  height: 100vh;
 }
-.service-list{
-  display:flex;
-  justify-content: space-between;
-  align-content: center;
-  padding: 30px 10%;
+.box{
+  width:90%;
+  background: #181719;
+  border-radius: 20px;
+  z-index: 20;
   
-}
-.service-list li{
-  display: inline-block;
 
 }
-.service-list  a{
-  transition: all 0.3s ease-out 0s;
-}
-.service-list a:hover{
-  color: #0936F6;
-}
-.join-us-section {
-  display: flex;
-  flex-direction: column;
+.boxes{
+  /*position: relative;
+  width:400px;
+  height: 500px;
+  bottom:400px;
+  left: 850px;
+  /*margin-top: 6px;*/
+  margin-bottom: 20px;
+  margin-left: 20px;
+  /*display: flex;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 15vh;
-  overflow: hidden;
-  background:gray;
-}
-.join-us-header{
-  display:block;
-  color: #f9d952;
-}
-.join-us-list a {
-  display: inline-block;
-  padding: 0px;
-  margin: 0px;
-  font-size: 24px;
+  align-items: center;*/
+  background: #181719;
+  border-radius: 10px;
+  z-index: 20;
 }
 .message-section{
   display: flex;
@@ -190,7 +176,6 @@ a {
   height: fit-content;
   width: fit-content;
   background-image: linear-gradient(to top right #fdf3ca, white);
-  border-radius: 10px;
 
 }
 .message-header{
@@ -215,6 +200,48 @@ a {
   align-content: center;
   margin-left: 20px;
   /**margin-bottom: 36%;**/
+}
+.comment{
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 10px;
+  
+}
+.comment1{
+  border-radius: 20px;
+  background-color: #f9dc5e;
+}
+.comment2{
+  border-radius: 20px;
+  background-color: #f9dc5e; 
+  margin-left: 20px;
+}
+.comment3{
+  border-radius: 20px;
+  background-color: #f9dc5e;
+}
+
+.join-us-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 15vh;
+  overflow: hidden;
+  background:gray;
+}
+.join-us-header{
+  display:block;
+  color: #f9d952;
+}
+.join-us-list a {
+  transition: all 0.3s ease-in-out 0s;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  font-size: 24px;
 }
 
 
