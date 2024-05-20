@@ -90,7 +90,7 @@
 
         .mainp {
           height: auto;
-          margin: 16px;
+          margin: 8px;
         }
         .animate {
           display: none;
@@ -112,9 +112,7 @@
       }
     }
     .container {
-      margin-left: 16px;
-      margin-right: 16px;
-      margin-top: 150px;
+      margin: 32px 16px;
       height: auto;
 
       .sunday {
@@ -138,31 +136,43 @@
         font-size: 16px;
 
         a {
-          margin: 10px;
-          display: flex;
-          align-items: center;
-          padding: 16px;
-          width: 16px;
-          height: 10px;
+          // margin: 10px;
+          // display: flex;
+          // // flex-direction: row;
+          // align-items: center;
+          // padding: 16px;
+          // width: 16px;
+          // height: 10px;
+
+          .item {
+            display: inline;
+            justify-self: center;
+            align-self: center;
+          }
+
+          span {
+            padding: 5px;
+            font-size: 10px;
+            display: inline-flex;
+            text-align: justify;
+            // flex-direction: row;
+            // align-items: center;
+          }
+
+          .fa-solid {
+            margin-right: 20px;
+            width: 16px;
+            height: 16px;
+          }
         }
-        .fa-solid {
-          margin-right: 20px;
-          width: 16px;
-          height: 16px;
-        }
+
         p {
           font-size: 12px;
           margin: 5px;
           font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
             "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
         }
-        .items {
-          padding: 5px;
-          font-size: 10px;
-          display: inline-block;
-          // flex-direction: column;
-          // align-items: center;
-        }
+
         // .items:nth-child(3) {
         //   flex-direction: row;
         // }
@@ -181,10 +191,10 @@
       }
     }
     .footer {
-      font-size: small;
-      display: inline-block;
-      align-content: center;
-      padding-right: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: large;
     }
   }
 }
