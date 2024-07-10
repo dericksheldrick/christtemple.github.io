@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 780px) {
   body {
     overflow-x: hidden;
 
@@ -91,6 +91,11 @@
         .mainp {
           height: auto;
           margin: 8px;
+
+          img {
+            width: 100%;
+            height: auto;
+          }
         }
         .animate {
           display: none;
