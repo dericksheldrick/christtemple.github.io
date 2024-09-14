@@ -14,6 +14,10 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
     <script
       src="https://kit.fontawesome.com/102d806e3c.js"
       crossorigin="anonymous"
@@ -36,14 +40,15 @@
         </label>
         <ul class="nav-list" role="navigation">
           <li><a href="#home" aria-label="Home">HOME</a></li>
-          <li><a href="#service" aria-label="About Us">ABOUT US</a></li>
-          <li><a href="service.html" aria-label="Services">SERVICES</a></li>
-          <li><a href="#join-us" aria-label="Join Us">JOIN US</a></li>
+          <li><a href="#about" aria-label="About Us">ABOUT US</a></li>
+          <li><a href="#service" aria-label="Services">SERVICES</a></li>
           <li><a href="#gallery" aria-label="Gallery">GALLERY</a></li>
+          <li><a href="#join-us" aria-label="Join Us">JOIN US</a></li>
         </ul>
       </nav>
     </header>
 
+    <!-- Hero Section -->
     <section id="home">
       <div id="come-section" class="come-section">
         <p>CONNECTING PEOPLE TO GOD AND EACH OTHER</p>
@@ -60,7 +65,8 @@
       </div>
     </section>
 
-    <section id="service" class="service-section">
+    <!-- Service Section -->
+    <section id="about" class="service-section">
       <div class="message-section">
         <h2>About Us</h2>
         <p>
@@ -69,7 +75,6 @@
         </p>
       </div>
 
-      <!-- Peace, Vision, and Mission Cards -->
       <div class="card-container">
         <div class="card peace">
           <h3>Statement Of Faith</h3>
@@ -112,7 +117,8 @@
         </div>
       </div>
     </section>
-    <section class="container"></section>
+    <section class="container" id="service">
+      <img src="./image/back2.jpg" alt="Bible" />
       <div class="sunday">
         <h2>Sunday Service</h2>
         <p>Join us for a meaningful Sunday as we connect with God:</p>
@@ -147,23 +153,35 @@
       <h2>Gallery</h2>
       <div class="carousel">
         <button class="carousel_button carousel_button--left is-hidden">
-          <img src="./image/prev.png" alt="" />
+          <img src="./image/prev.png" alt="Previous slide" />
         </button>
         <div class="carousel_track-container">
           <ul class="carousel_track">
             <li class="carousel_slide current-slide">
-              <img class="carousel_images" src="./image/bap 11.jpg" alt="" />
+              <img
+                class="carousel_images"
+                src="./image/bap 15.jpg"
+                alt="Gallery image 1"
+              />
             </li>
             <li class="carousel_slide">
-              <img class="carousel_images" src="./image/bap 12.jpg" alt="" />
+              <img
+                class="carousel_images"
+                src="./image/bap 17.jpg"
+                alt="Gallery image 2"
+              />
             </li>
             <li class="carousel_slide">
-              <img class="carousel_images" src="./image/bap 13.jpg" alt="" />
+              <img
+                class="carousel_images"
+                src="./image/bap 13.jpg"
+                alt="Gallery image 3"
+              />
             </li>
           </ul>
         </div>
         <button class="carousel_button carousel_button--right">
-          <img src="./image/next.png" alt="" />
+          <img src="./image/next.png" alt="Next slide" />
         </button>
         <div class="carousel_nav">
           <button class="carousel_indicator current-slide"></button>
@@ -173,48 +191,56 @@
       </div>
     </section>
 
+    <!-- Join Us Section -->
     <section id="join-us" class="join-us-section">
-      <h2>Contact Info</h2>
-      <a
-        href="tel:+254716438173"
-        target="_blank"
-        aria-label="Call Word Reconciliation Ministry"
-      >
-        <i class="fa-solid fa-phone"></i> 0716 438173
-      </a>
-      <a
-        href="mailto:wordreconciliationministry@gmail.com"
-        target="_blank"
-        aria-label="Email Word Reconciliation Ministry"
-      >
-        <i class="fa-solid fa-envelope"></i>
-        wordreconciliationministry@gmail.com
-      </a>
-      <a href="#" aria-label="Church Location">
-        <i class="fa-solid fa-location-dot"></i> Behind SDA Church Olympic
-      </a>
-      <a href="#home" aria-label="Back to top">
-        <i class="fa-solid fa-house"></i> Top
-      </a>
+      <div class="contact">
+        <h2>Contact Info</h2>
+        <a
+          href="tel:+254716438173"
+          target="_blank"
+          aria-label="Call Word Reconciliation Ministry"
+        >
+          <i class="fa-solid fa-phone"></i> 0716 438173
+        </a>
+        <a
+          href="mailto:wordreconciliationministry@gmail.com"
+          target="_blank"
+          aria-label="Email Word Reconciliation Ministry"
+        >
+          <i class="fa-solid fa-envelope"></i>
+          wordreconciliationministry@gmail.com
+        </a>
+        <a href="#" aria-label="Church Location">
+          <i class="fa-solid fa-location-dot"></i> Behind SDA Church Olympic
+        </a>
+        <a href="#home" aria-label="Back to top">
+          <i class="fa-solid fa-house"></i> Top
+        </a>
+      </div>
 
       <div class="follow">
-        <h2>Follow Us</h2>
-        <a href="#" target="_blank" aria-label="Facebook"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a
-          href="https://youtube.com/@wordreconciliationministry1153?si=ZRabRpDdZ3YexM0j"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="YouTube"
-          ><i class="fa-brands fa-youtube"></i
-        ></a>
-        <a href="#" target="_blank" aria-label="Instagram"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
+        <img src="./image/wrm.png" alt="church log" />
+        <div class="links_title">
+          <h2>Follow Us</h2>
+        </div>
+        <div class="links">
+          <a href="#" target="_blank" aria-label="Facebook"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://youtube.com/@wordreconciliationministry1153?si=ZRabRpDdZ3YexM0j"
+            target="_blank"
+            aria-label="YouTube"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="#" target="_blank" aria-label="Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
       <hr />
       <p>&copy; 2024 Boss Enterprise. All Rights Reserved.</p>
