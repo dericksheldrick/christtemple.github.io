@@ -66,7 +66,10 @@ a {
     color: $primary_color1;
     border-radius: 50%;
   }
-  // Mobile menu adjustments
+  .menu-toggle {
+    display: none;
+  }
+  // Mobile menu
   @media (max-width: 768px) {
     .menu-toggle {
       display: none;
@@ -283,10 +286,12 @@ a {
     position: relative;
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
     .carousel_track-container {
       background: $primary_color2;
       overflow: hidden;
       border-radius: 10px;
+      height: 600px;
     }
     .carousel_track {
       display: flex;
@@ -297,8 +302,10 @@ a {
       transition: opacity 0.3s ease-in-out;
       img {
         width: 100%;
-        height: auto;
+        max-height: 590px;
+        object-fit: cover;
         border-radius: 10px;
+        margin: 0 auto;
       }
     }
     .carousel_button {
@@ -309,8 +316,8 @@ a {
       cursor: pointer;
       transform: translateY(-50%);
       img {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
       }
     }
     .carousel_button--left {
@@ -334,6 +341,18 @@ a {
       transition: background-color 0.3s ease;
       &.current-slide {
         background-color: $primary_color2;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    .carousel {
+      max-width: 100%;
+
+      .carousel_track-container {
+        height: 300px;
+      }
+      .carousel_slide img {
+        height: 290px;
       }
     }
   }
